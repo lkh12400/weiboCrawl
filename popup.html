@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Getting Started Extension's Popup</title>
+    <style>
+        body {
+            font-family: "Segoe UI", "黑体", "Lucida Grande", Tahoma, sans-serif;
+            width: 270px;
+            text-align: center;
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+
+        h5 {
+            margin: 0px;
+            color: gray;
+        }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>
+</head>
+<body>
+    <h3>微博数据抓取工具</h3>
+    <h4>说明</h4>
+    <ul style="text-align: left">
+        <li><h5>仅适用于微博搜索页面</h5></li>
+        <li><h5>需待抓取的内容加载出来</h5></li>
+        <li><h5>展开全文只是用于参考，并不影响直接点击抓取</h5></li>
+    </ul>
+    <button id="open_btn">展开全文</button>
+    <button id="crawl_btn">抓取</button><br>
+    <hr>
+    <footer>
+        <h5>Version 1.0</h5>
+        <h5>Author : kaihua liu</h5>
+        <h5>Email  : liukaihua@yappam.com</h5>
+
+    </footer>
+<!-- Place this tag where you want the button to render. -->
+</body>
+</html>
+
