@@ -1,6 +1,6 @@
 $(function(){
     var dataJson = ""; // 需保存的数据
-    // 解析chrome.storage的数据，并把需展开全文的内容不错完整
+    // 解析chrome.storage的数据，并把需展开全文的内容补充完整
     chrome.storage.local.get('data', function(result){
         var html = "";　// 页面数据展示
         dataJson = JSON.parse(eval(result).data);
