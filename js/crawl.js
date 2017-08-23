@@ -13,7 +13,11 @@ $(function(){
                     async:false,
                     success: function(data){
                         /** 重置content和openContent */
-                        value.content = decodeURIComponent(data.data.html);
+                        try {
+                            value.content = decodeURIComponent(data.data.html);
+                        } catch (e) {
+                            value.content = data.data.html;
+                        }
                         value.openContent = false;
                     },
                     error: function(){
